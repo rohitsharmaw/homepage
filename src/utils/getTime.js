@@ -73,21 +73,21 @@ export const helloInit = () => {
   const hour = new Date().getHours();
   let hello = null;
   if (hour < 6) {
-    hello = "凌晨好";
+    hello = "你醒了？";
   } else if (hour < 9) {
-    hello = "早上好";
+    hello = "早上好！";
   } else if (hour < 12) {
-    hello = "上午好";
+    hello = "上午好！";
   } else if (hour < 14) {
-    hello = "中午好";
+    hello = "中午好！";
   } else if (hour < 17) {
-    hello = "下午好";
+    hello = "下午好！";
   } else if (hour < 19) {
-    hello = "傍晚好";
+    hello = "该休息啦！";
   } else if (hour < 22) {
     hello = "晚上好";
   } else {
-    hello = "夜深了";
+    hello = "快睡吧……";
   }
   ElMessage({
     dangerouslyUseHTMLString: true,
@@ -140,5 +140,5 @@ export const siteDateStatistics = (startDate) => {
     months += 12;
   }
 
-  return `本站已经苟活了 ${years} 年 ${months} 月 ${days} 天`;
+  return `本站已经运行了 ${years} 年 ${months} 月 ${days} 天！感谢你的陪伴~`;
 };
